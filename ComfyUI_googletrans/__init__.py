@@ -26,7 +26,7 @@ class GoogletransNode:
             translated = translator.translate(input_text, src=source_language, dest=destination_language)
             return (translated.text,)
         except Exception as e:
-            logging.exception(f"Error translating text. args={args}, kwargs={kwargs}")
+            logging.exception(f"Error translating text. input_text={input_text}, source_language={source_language}, destination_language={destination_language}, args={args}, kwargs={kwargs}")
             return (e,)
 
 class ViewTextNode:
