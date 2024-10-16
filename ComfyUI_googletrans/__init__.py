@@ -12,7 +12,7 @@ class GoogletransNode:
         return {
             "required": {
                 "text": ("STRING", {"multiline": True, "default": "Hello, how are you?"}),
-                "source_language": (list(googletrans.LANGUAGES.values()), {"default": "english"}),
+                "source_language": (["auto"] + list(googletrans.LANGUAGES.values()), {"default": "english"}),
                 "destination_language": (list(googletrans.LANGUAGES.values()), {"default": "english"}),
             }
         }
