@@ -21,8 +21,8 @@ authors = ["Dave Choi <dave.dev@icloud.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.6"
-googletrans = "=3.0.0"
+python = "^3.7"
+googletrans-py = "^4.0.0"
 
 [build-system]
 requires = ["poetry-core"]
