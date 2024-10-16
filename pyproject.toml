@@ -1,0 +1,14 @@
+[project]
+name = "ComfyUI-googletrans"
+description = ""
+version = "0.1.0"
+license = {text = "MIT License"}
+dependencies  = []
+
+[project.urls]
+Repository = "https://github.com/sweetndata/ComfyUI-googletrans"
+
+[tool.comfy]
+PublisherId = "Sweetndata"
+DisplayName = "ComfyUI-googletrans"
+Icon = ""
