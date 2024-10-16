@@ -1,5 +1,5 @@
 [project]
-name = "ComfyUI-googletrans"
+name = "comfyui-googletrans"
 description = ""
 version = "0.1.0"
 license = {text = "MIT License"}
