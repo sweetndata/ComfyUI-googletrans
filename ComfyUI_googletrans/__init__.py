@@ -29,32 +29,10 @@ class GoogletransNode:
             logging.exception(f"Error translating text. input_text={str(input_text)}, source_language={source_language}, destination_language={destination_language}, args={args}, kwargs={kwargs}")
             return (e,)
 
-class ViewTextNode:
-    def __init__(self):
-        pass
-
-    @classmethod
-    def INPUT_TYPES(cls):
-        return {
-            "required": {
-                "text": ("STRING", {"multiline": True, "default": "Hello, how are you?"}),
-            }
-        }
-
-    RETURN_TYPES = ()
-    FUNCTION = "do_view_text"
-    OUTPUT_NODE = True
-    CATEGORY = "text"
-
-    def do_view_text(self, text):
-        return {"ui": {"text": text}}
-
 NODE_CLASS_MAPPINGS = {
     "googletrans": GoogletransNode,
-    "view_text": ViewTextNode,
 }
 
 NODE_DISPLAY_NAME_MAPPINGS = {
     "googletrans": "Google Translate",
-    "view_text": "View Text",
 }
