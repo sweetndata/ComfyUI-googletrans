@@ -12,8 +12,8 @@ class GoogletransNode:
         return {
             "required": {
                 "text": ("STRING", {"multiline": True, "default": "Hello, how are you?"}),
-                "source_language": (googletrans.LANGUAGES, {"default": "en"}),
-                "destination_language": (googletrans.LANGUAGES, {"default": "en"}),
+                "source_language": (googletrans.LANGUAGES.values(), {"default": "english"}),
+                "destination_language": (googletrans.LANGUAGES.values(), {"default": "english"}),
             }
         }
 
