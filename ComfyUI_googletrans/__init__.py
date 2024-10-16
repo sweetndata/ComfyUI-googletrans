@@ -1,4 +1,5 @@
 import googletrans
+import logging
 
 class GoogletransNode:
     def __init__(self):
@@ -25,6 +26,7 @@ class GoogletransNode:
             translated = translator.translate(text, src=source_language, dest=destination_language)
             return (translated.text,)
         except Exception as e:
+            logging.exception(f"Error translating text.")
             return (e,)
 
 class ViewTextNode:
