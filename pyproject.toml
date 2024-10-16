@@ -12,3 +12,18 @@ Repository = "https://github.com/sweetndata/ComfyUI-googletrans"
 PublisherId = "Sweetndata"
 DisplayName = "ComfyUI-googletrans"
 Icon = ""
+
+[tool.poetry]
+name = "comfyui-googletrans"
+version = "0.1.0"
+description = ""
+authors = ["Dave Choi <dave.dev@icloud.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.6"
+googletrans = "=3.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
