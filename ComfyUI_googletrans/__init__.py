@@ -1,7 +1,6 @@
 import os
 import sys
 import re
-import folder_paths
 
 dir_path = os.path.dirname(os.path.abspath(__file__))
 path_dir = os.path.dirname(dir_path)
