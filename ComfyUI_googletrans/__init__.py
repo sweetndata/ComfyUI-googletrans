@@ -9,7 +9,7 @@ class GoogletransNode:
     def INPUT_TYPES(cls):
         return {
             "required": {
-                "text": ("STRING", {"multiline": True, "default": "Hello, how are you?"}),
+                "input_text": ("STRING", {"multiline": True, "default": "Hello, how are you?"}),
                 "source_language": (["auto"] + list(googletrans.LANGUAGES.values()), {"default": "english"}),
                 "destination_language": (list(googletrans.LANGUAGES.values()), {"default": "english"}),
             }
@@ -20,13 +20,13 @@ class GoogletransNode:
     FUNCTION = "do_translate"
     CATEGORY = "text"
 
-    def do_translate(self, text, source_language, destination_language):
+    def do_translate(self, input_text, source_language, destination_language, *args, **kwargs):
         try :
             translator = googletrans.Translator()
-            translated = translator.translate(text, src=source_language, dest=destination_language)
+            translated = translator.translate(input_text, src=source_language, dest=destination_language)
             return (translated.text,)
         except Exception as e:
-            logging.exception(f"Error translating text.")
+            logging.exception(f"Error translating text. args={args}, kwargs={kwargs}")
             return (e,)
 
 class ViewTextNode:
