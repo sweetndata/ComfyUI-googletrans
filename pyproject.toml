@@ -9,7 +9,7 @@ dependencies  = []
 Repository = "https://github.com/sweetndata/ComfyUI-googletrans"
 
 [tool.comfy]
-PublisherId = "Sweetndata"
+PublisherId = "sweetndata"
 DisplayName = "ComfyUI-googletrans"
 Icon = ""
 
