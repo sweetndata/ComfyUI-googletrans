@@ -1,7 +1,7 @@
 [project]
 name = "comfyui-googletrans"
 description = ""
-version = "0.1.0"
+version = "0.1.1"
 license = {text = "MIT License"}
 dependencies  = []
 
@@ -15,7 +15,7 @@ Icon = ""
 
 [tool.poetry]
 name = "comfyui-googletrans"
-version = "0.1.0"
+version = "0.1.1"
 description = ""
 authors = ["Dave Choi <dave.dev@icloud.com>"]
 readme = "README.md"
