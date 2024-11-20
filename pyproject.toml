@@ -1,6 +1,6 @@
 [project]
 name = "comfyui-googletrans"
-description = ""
+description = "NODES:Google Translate"
 version = "0.1.1"
 license = {text = "MIT License"}
 dependencies  = []
